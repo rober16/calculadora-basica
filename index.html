@@ -4,22 +4,21 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Calculadora</title>
+    <script language="javascript" src="./Java.js"></script>
 </head>
 
 <body>
-	
-	<form type="submit">
-		<input type="text" id="input1">
-        <Select name="op">
+	<form name="calculadora" onSubmit="fx_Calcular();" method="post">
+		<input type="number" name="input1">
+        <select name="op">
              <option value = 's'>sumar </option>
              <option value = 'r'>restar </option>
              <option value = 'm'>multiplicar </option>
              <option value = 'd'>divir </option>
-        </Select>
-		<input type="text" id="input2">
-		
-	</form>
-
+        </select>
+		<input type="number" name="input2">
+       <input type="submit" value="Calcular">
+    </form>
 </body>
 
 </html>
